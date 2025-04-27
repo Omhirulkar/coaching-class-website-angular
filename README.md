@@ -19,6 +19,16 @@ A full-featured coaching class website built with Angular 16+. Designed to showc
 - Bootstrap 
 - Firebase 
 
+## Screenshots
+
+![image](https://github.com/user-attachments/assets/fd3a77bd-38a1-4839-84b4-bbf763a298b4)
+
+![image](https://github.com/user-attachments/assets/0fd2868c-2319-4da7-bc22-a6f5217b0f30)
+
+
+
+
+
 ## Setup Instructions
 
 Clone the project:

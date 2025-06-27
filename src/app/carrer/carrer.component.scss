@@ -1,0 +1,22 @@
+.card {
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .btn-primary {
+    background-color: #5C0F8B;
+    border-color: #5C0F8B;
+  }
+  
+  .btn-primary:hover {
+    background-color: #460A69;
+  }
+  
+
+  *{
+    font-family: 'Poppins';
+  }

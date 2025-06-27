@@ -1,0 +1,24 @@
+<div class="container py-4">
+  <h2 class="text-center fw-bold">Our Courses</h2>
+  <p class="text-center">Choose the best course for your future success.</p>
+
+  <div class="row">
+    <div class="col-md-4 mb-4" *ngFor="let category of categories">
+      <div class="card category-card">
+        <div class="card-body text-center">
+          <div class="icon">
+            <i [class]="category.icon"></i>  <!-- Dynamically setting Bootstrap icon -->
+          </div>
+          <h5 class="card-title">{{ category.title }}</h5>
+          <div class="tags">
+            <span class="badge bg-primary" *ngFor="let tag of category.tags">{{ tag }}</span>
+          </div>
+          <div class="explore">
+            <!-- <span>Explore Course</span>
+            <span class="arrow">➝</span> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

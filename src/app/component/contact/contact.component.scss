@@ -1,0 +1,27 @@
+*{
+    font-family: 'Poppins';
+}
+
+.contact-icon {
+    font-size: 2rem;
+    color: #007bff;
+    margin-bottom: 10px;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .social-link {
+    font-size: 1.5rem;
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .social-link:hover {
+    color: #0056b3;
+  }
+  

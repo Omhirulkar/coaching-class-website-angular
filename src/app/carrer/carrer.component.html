@@ -1,0 +1,17 @@
+<div class="container text-center">
+    <h2 class="text-primary mt-4">We Are Hiring!</h2>
+    <p class="lead">Join our team and build your career with us.</p>
+  
+    <div class="row">
+      <div class="col-md-4" *ngFor="let job of jobListings">
+        <div class="card mb-4 shadow">
+          <div class="card-body">
+            <h5 class="card-title">{{ job.title }}</h5>
+            <p class="card-text">{{ job.description }}</p>
+            <button class="btn btn-primary" (click)="applyNow(job)">Apply Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

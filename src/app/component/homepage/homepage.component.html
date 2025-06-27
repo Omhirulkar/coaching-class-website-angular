@@ -1,0 +1,202 @@
+<!-- -------------slider -->
+
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button *ngFor="let slide of slides; let i = index"
+            type="button" 
+            data-bs-target="#carouselExampleIndicators" 
+            [attr.data-bs-slide-to]="i" 
+            [class.active]="i === 0"></button>
+  </div>
+
+  <div class="carousel-inner">
+    <div *ngFor="let slide of slides; let i = index" 
+         class="carousel-item" 
+         [class.active]="i === 0" 
+         data-bs-interval="2000">  <!-- Set speed to 2 seconds -->
+      <img [src]="slide.desktop" class="d-none d-md-block w-100" alt="Desktop Image">
+      <img [src]="slide.mobile" class="d-block d-md-none w-100" alt="Mobile Image">
+    </div>
+  </div>
+
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+<!-- --------------akola best coaching -->
+
+<div class="coaching-section">
+  <div class="container py-5">
+    <div class="row align-items-center">
+      
+      <!-- Left Side: Text -->
+      <div class="col-md-6 text-center text-md-start">
+        <h1 class="title">#1 Institute in<br>Vidarbha Region for<br>NEET | JEE Preparation</h1>
+        <p class="description">Providing the best education for students with top-notch faculty and study materials.</p>
+      </div>
+
+      <!-- Right Side: Video -->
+      <div class="col-md-6 text-center">
+        <div class="video-container">
+          <iframe src="https://www.youtube.com/embed/Rw_ejdHBlTI?si=FKtckJLdAnfVBV_9&amp;controls=0&autoplay=1" 
+                  title="YouTube video player" 
+                  frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                  referrerpolicy="strict-origin-when-cross-origin" 
+                  allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Counter Section -->
+<!-- <section class="counter-section text-center py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="counter-box">
+          <h2 class="counter" data-target="10000" data-suffix ="+">0</h2>
+          <p>Students Enrolled</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="counter-box">
+          <h2 class="counter" data-target="12" data-suffix="+">0</h2>
+          <p>Batches Available</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="counter-box">
+          <h2 class="counter" data-target="10" data-suffix="+">0</h2>
+          <p>Expert Faculty</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="counter-box">
+          <h2 class="counter" data-target="98" data-suffix="%">0%</h2>
+          <p>Success Rate</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+<!-- ----------------card -->
+
+<div class="d-flex justify-content-center heading">Our Courses Offered</div>
+
+<div class="container py-4">
+  <div class="row">
+    <div class="col-md-4" *ngFor="let category of categories">
+      <div class="card category-card">
+        <div class="card-body">
+          <div class="icon">
+            <img [src]="category.icon" alt="{{ category.title }} Icon"> 
+          </div>
+          <h5 class="card-title">{{ category.title }}</h5>
+          <div class="tags">
+            <span class="badge" *ngFor="let tag of category.tags">{{ tag }}</span>
+          </div>
+          <div class="explore">
+            <!-- <span>Explore Category</span>
+            <span class="arrow">➝</span> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- ------------------------Platform trusted by student -->
+
+<div class="container text-center my-5">
+  <h2 class="fw-bold">Best Coaching Trusted by Students</h2>
+  <p>We aim to transform not just through words, but provide results with numbers!</p>
+
+  <div class="row mt-4">
+      <div class="col-md-3">
+          <div class="stat-card" style="background-color: #fff4e6;">
+              <div class="stat-number">20,000+</div>
+              <div>Happy Students</div>
+          </div>
+      </div>
+      <div class="col-md-3">
+          <div class="stat-card" style="background-color: #ffe6e6;">
+              <div class="stat-number">2000+</div>
+              <div>MBBS Selections</div>
+          </div>
+      </div>
+      <div class="col-md-3">
+          <div class="stat-card" style="background-color: #e6f7ff;">
+              <div class="stat-number">1000+</div>
+              <div>Engineering Selections</div>
+          </div>
+      </div>
+      <!-- <div class="col-md-3">
+          <div class="stat-card" style="background-color: #f0e6ff;">
+              <div class="stat-number">800+</div>
+              <div>Practice Papers</div>
+          </div>
+      </div> -->
+  </div>
+</div>
+
+<!-- App Promotion Section -->
+<div class="container my-5">
+  <div class="promo-card">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <h2>Join 5 Thousands + students on the app today!</h2>
+        <ul class="promo-list">
+          <li>✅ Daily Classroom Recorded Videos</li>
+          <li>✅ Board Work PDF Notes</li>
+          <li>✅ 1500+ Concepts Based Animated Videos</li>
+        </ul>
+        <div class="store-buttons">
+          <a href="https://play.google.com/store/apps/details?id=co.jorah.mwkop&pcampaignid=web_share" target="_blank">
+            <img src="/assets/google-play.png" alt="Google Play" class="store-btn">
+          </a>
+          <a href= "https://apps.apple.com/in/app/myinstitute/id1472483563" target="_blank">
+          <img src="/assets/app-store.png" alt="App Store" class="store-btn">
+        </a>
+        </div>
+      </div>
+
+      <!-- Promo Image (Hidden on Mobile) -->
+      <div class="col-md-6 d-none d-md-block">
+        <img src="/assets/image.png" class="img-fluid" alt="Promo">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ---------------------testimonal -->
+
+<!-- Testimonial Videos Section -->
+<!-- Testimonial Videos Section -->
+<div class="testimonial-section container text-center my-5">
+  <h2 class="fw-bold mb-4">Student Success Stories</h2>
+  <div class="row justify-content-center">
+    <div class="col-md-4" *ngFor="let video of testimonialVideos">
+      <div class="video-card">
+        <video controls class="testimonial-video w-100 rounded">
+          <source [src]="video.src" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <h5 class="mt-3 fw-bold">{{ video.name }}</h5>
+        <p class="text-muted">{{ video.class }}</p>
+      </div>
+    </div>
+  </div>
+</div>

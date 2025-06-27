@@ -1,0 +1,20 @@
+<div class="list-container">
+    <h2>Registered Students</h2>
+    <button class="export-button" (click)="exportToExcel()">Export to Excel</button>
+    <table class="registrations-table">
+      <thead>
+        <tr>
+          <th>Student Name</th>
+          <th>Mobile Number</th>
+          <th>NEET Score</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let registration of registrations$ | async">
+          <td>{{ registration.studentName }}</td>
+          <td>{{ registration.mobileNumber }}</td>
+          <td>{{ registration.neetScore }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>

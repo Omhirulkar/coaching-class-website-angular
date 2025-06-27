@@ -1,10 +1,11 @@
 export const environment = {
-    firebaseConfig: {
-        apiKey: "AIzaSyCgT1X4YDRgnQytqZv8sNwZQ7eshr6BcXo",
-        authDomain: "aistudyguide-f5d3c.firebaseapp.com",
-        projectId: "aistudyguide-f5d3c",
-        storageBucket: "aistudyguide-f5d3c.firebasestorage.app",
-        messagingSenderId: "606064991375",
-        appId: "1:606064991375:web:3d9c3c74820582beb2e4fa"
-    }
+  firebaseConfig: {
+    apiKey:              'DUMMY_API_KEY',
+    authDomain:          'your-project.firebaseapp.com',
+    projectId:           'your-project-id',
+    storageBucket:       'your-project-id.appspot.com',
+    messagingSenderId:   '000000000000',
+    appId:               '1:000000000000:web:0000000000000000'
+  },
+  production: false
 };
